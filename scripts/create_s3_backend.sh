@@ -1,13 +1,3 @@
-# 引数の確認
-while getopts ab:c: OPT
-do
-  case $OPT in
-    "a" ) FLG_A="TRUE" ;;
-    "b" ) FLG_B="TRUE" ; VALUE_B="$OPTARG" ;;
-    "c" ) FLG_C="TRUE" ; VALUE_C="$OPTARG" ;;
-  esac
-done
-
 # 変数の設定
 bucket_name="tfstate-123456789012" # 必要に応じて変更
 region="ap-northeast-1"
