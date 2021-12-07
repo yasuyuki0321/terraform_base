@@ -27,7 +27,7 @@ terraform {
     key            = "dev/terraform.tfstate" # 必要に応じて変更
     region         = "ap-northeast-1"
     encrypt        = true
-    dynamodb_table = "TerraformStateLockTable" #
+    dynamodb_table = "TerraformStateLockTable" # 必要に応じて変更
   }
 }
 
