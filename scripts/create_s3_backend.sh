@@ -30,10 +30,10 @@ aws s3api put-bucket-lifecycle-configuration --bucket ${bucket_name} \
       "Prefix": "",
       "Status": "Enabled",
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 10
+        "NoncurrentDays": 180
       },
       "AbortIncompleteMultipartUpload": {
-        "DaysAfterInitiation": 10
+        "DaysAfterInitiation": 180
       }
     }
   ]
